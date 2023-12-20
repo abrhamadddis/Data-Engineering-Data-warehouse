@@ -1,0 +1,14 @@
+[2023-12-20T12:24:49.930+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: our_first_dag_with_python_operator_v4.greet scheduled__2022-01-31T00:00:00+00:00 [queued]>
+[2023-12-20T12:24:49.963+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: our_first_dag_with_python_operator_v4.greet scheduled__2022-01-31T00:00:00+00:00 [queued]>
+[2023-12-20T12:24:49.964+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 6
+[2023-12-20T12:24:50.014+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): greet> on 2022-01-31 00:00:00+00:00
+[2023-12-20T12:24:50.040+0000] {standard_task_runner.py:60} INFO - Started process 15853 to run task
+[2023-12-20T12:24:50.081+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_with_python_operator_v4', 'greet', 'scheduled__2022-01-31T00:00:00+00:00', '--job-id', '4384', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmpfjh2q0jb']
+[2023-12-20T12:24:50.110+0000] {standard_task_runner.py:88} INFO - Job 4384: Subtask greet
+[2023-12-20T12:24:50.300+0000] {task_command.py:423} INFO - Running <TaskInstance: our_first_dag_with_python_operator_v4.greet scheduled__2022-01-31T00:00:00+00:00 [running]> on host 29b3723064ac
+[2023-12-20T12:24:50.603+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='abrham' AIRFLOW_CTX_DAG_ID='our_first_dag_with_python_operator_v4' AIRFLOW_CTX_TASK_ID='greet' AIRFLOW_CTX_EXECUTION_DATE='2022-01-31T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-01-31T00:00:00+00:00'
+[2023-12-20T12:24:50.604+0000] {logging_mixin.py:188} INFO - hello world
+[2023-12-20T12:24:50.604+0000] {python.py:201} INFO - Done. Returned value was: None
+[2023-12-20T12:24:50.639+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=our_first_dag_with_python_operator_v4, task_id=greet, execution_date=20220131T000000, start_date=20231220T122449, end_date=20231220T122450
+[2023-12-20T12:24:50.707+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2023-12-20T12:24:50.745+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
