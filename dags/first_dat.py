@@ -1,34 +1,29 @@
 from datetime import datetime, timedelta
-
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 
 default_args = {
-    'owner':'abrham',
+    'owner': 'abrham',
     'retries': 5,
-    'retry_delay':timedelta(minutes=2)
+    'retry_delay': timedelta(minutes=2)
 }
 
 with DAG(
-    dag_id= 'our_first_dag_v4',
+    dag_id='dbt_dag',
     default_args=default_args,
-    description='this is our first dag that we write',
+    description='A DAG to run dbt commands',
     start_date=datetime(2021, 7, 29, 2),
     schedule_interval='@daily',
-)as dag:
-    task1 = BashOperator(
-        task_id= 'first_task',
-        bash_command= 'echo hello world, this is the first task!'
+) as dag:
+
+    dbt_run = BashOperator(
+        task_id='dbt_run',
+        bash_command='dbt run --profiles-dir ../dbt_warehouse'
     )
 
-    task2 = BashOperator(
-        task_id = 'second_id',
-        bash_command='echo hey, I am task2 and will be runing after task 1'
+    dbt_test = BashOperator(
+        task_id='dbt_test',
+        bash_command='dbt test --profiles-dir ../dbt_warehouse'
     )
 
-    task3 = BashOperator(
-        task_id = 'tird_id',
-        bash_command='echo hey, I am task3 and will be runing after task 2'
-    )
-
-    task1 >> task2 >> task3
+    dbt_run >> dbt_test

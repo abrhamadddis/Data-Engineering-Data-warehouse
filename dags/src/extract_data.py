@@ -35,3 +35,6 @@ def extract_data(file_path):
 
     return df_track, df_trajectory
 
+
+if __name__ == "__main__":
+    extract_data()

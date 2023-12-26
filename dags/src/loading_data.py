@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine
-from extract_data import extract_data
+
 
 def create_conn():
     engine = None
@@ -17,3 +17,7 @@ def load_data_to_db(df, table_name, engine):
         print(f"Data loaded to {table_name} successfully.")
     except Exception as error:
         print(error)
+
+if __name__ == "__main__":
+    create_conn()
+    load_data_to_db()
