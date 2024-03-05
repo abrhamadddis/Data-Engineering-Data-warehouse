@@ -1,2 +1,3 @@
-warehous/
-logs/
+/warehous
+/logs
+/redash
