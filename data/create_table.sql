@@ -1,5 +1,4 @@
 
-
 CREATE TABLE trajectory_information (
     track_id DECIMAL(10, 6) NOT NULL,
     lat DECIMAL(10, 6) NOT NULL,

@@ -10,9 +10,22 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
       
   adminer:
     image: adminer
     restart: always
     ports:
       - 8080:8080
+  dbt:
+    image: python:3.9
+    restart: always
+    volumes:
+      - ./dbt:/usr/app/dbt
+    working_dir: /usr/app/dbt
+    environment:
+      - DBT_PROFILES_DIR=/usr/app/dbt/profiles
+    command: bash -c "pip install dbt-postgres && tail -f /dev/null"
+    depends_on:
+      - db
