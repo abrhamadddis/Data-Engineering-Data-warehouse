@@ -1,7 +1,7 @@
 traffic_data:
   outputs:
     dev:
-      dbname: postgres
+      dbname: data_ware_house
       host: db
       pass: postgres
       port: 5432
