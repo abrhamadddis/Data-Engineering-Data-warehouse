@@ -1,0 +1,351 @@
+[0m08:01:30.915250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715bf87da2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715bf89ed940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715bf89ed8e0>]}
+
+
+============================== 08:01:30.920259 | 5c75a360-61de-4885-9f73-a34c83391fe9 ==============================
+[0m08:01:30.920259 [info ] [MainThread]: Running with dbt=1.8.5
+[0m08:01:30.921471 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/usr/app/dbt/profiles', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:01:30.939754 [info ] [MainThread]: Creating dbt configuration folder at /usr/app/dbt/profiles
+[0m08:01:48.620942 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.9/site-packages/dbt/include/starter_project
+[0m08:01:48.625791 [info ] [MainThread]: 
+Your new dbt project "traffic_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m08:01:48.626806 [info ] [MainThread]: Setting up your profile.
+[0m08:03:21.821759 [info ] [MainThread]: Profile traffic_data written to /usr/app/dbt/profiles/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m08:03:21.824256 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 110.98242, "process_user_time": 1.686333, "process_kernel_time": 0.152758, "process_mem_max_rss": "87868", "process_out_blocks": "88", "process_in_blocks": "0"}
+[0m08:03:21.825802 [debug] [MainThread]: Command `dbt init` succeeded at 08:03:21.825520 after 110.98 seconds
+[0m08:03:21.827160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715bf87da2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715bf6dd1370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715bf89df550>]}
+[0m08:03:21.828129 [debug] [MainThread]: Flushing usage events
+[0m08:03:31.869722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740f728a52e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740f72abca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740f72abc970>]}
+
+
+============================== 08:03:31.874833 | f766043f-bebc-44fe-8892-f794a26b5393 ==============================
+[0m08:03:31.874833 [info ] [MainThread]: Running with dbt=1.8.5
+[0m08:03:31.876003 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt/profiles', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m08:03:31.895394 [info ] [MainThread]: dbt version: 1.8.5
+[0m08:03:31.897198 [info ] [MainThread]: python version: 3.9.19
+[0m08:03:31.898140 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m08:03:31.899398 [info ] [MainThread]: os info: Linux-6.8.0-40-generic-x86_64-with-glibc2.36
+[0m08:03:31.975238 [info ] [MainThread]: Using profiles dir at /usr/app/dbt/profiles
+[0m08:03:31.975932 [info ] [MainThread]: Using profiles.yml file at /usr/app/dbt/profiles/profiles.yml
+[0m08:03:31.976684 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt/dbt_project.yml
+[0m08:03:31.977799 [info ] [MainThread]: adapter type: postgres
+[0m08:03:31.978556 [info ] [MainThread]: adapter version: 1.8.2
+[0m08:03:31.979437 [info ] [MainThread]: Configuration:
+[0m08:03:31.979988 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:03:31.980749 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m08:03:31.981477 [info ] [MainThread]: Required dependencies:
+[0m08:03:31.982225 [debug] [MainThread]: Executing "git --help"
+[0m08:03:32.011365 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:03:32.013733 [debug] [MainThread]: STDERR: "b''"
+[0m08:03:32.014736 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:03:32.015933 [info ] [MainThread]: Connection:
+[0m08:03:32.017023 [info ] [MainThread]:   host: db
+[0m08:03:32.018197 [info ] [MainThread]:   port: 5432
+[0m08:03:32.019406 [info ] [MainThread]:   user: postgres
+[0m08:03:32.020589 [info ] [MainThread]:   database: postgres
+[0m08:03:32.021681 [info ] [MainThread]:   schema: public
+[0m08:03:32.022682 [info ] [MainThread]:   connect_timeout: 10
+[0m08:03:32.023514 [info ] [MainThread]:   role: None
+[0m08:03:32.024408 [info ] [MainThread]:   search_path: None
+[0m08:03:32.025169 [info ] [MainThread]:   keepalives_idle: 0
+[0m08:03:32.026076 [info ] [MainThread]:   sslmode: None
+[0m08:03:32.026918 [info ] [MainThread]:   sslcert: None
+[0m08:03:32.027738 [info ] [MainThread]:   sslkey: None
+[0m08:03:32.028512 [info ] [MainThread]:   sslrootcert: None
+[0m08:03:32.029263 [info ] [MainThread]:   application_name: dbt
+[0m08:03:32.031143 [info ] [MainThread]:   retries: 1
+[0m08:03:32.033368 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m08:03:32.067672 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m08:03:32.123670 [debug] [MainThread]: Using postgres connection "debug"
+[0m08:03:32.124182 [debug] [MainThread]: On debug: select 1 as id
+[0m08:03:32.124565 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:03:32.505822 [debug] [MainThread]: SQL status: SELECT 1 in 0.381 seconds
+[0m08:03:32.510223 [debug] [MainThread]: On debug: Close
+[0m08:03:32.512244 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m08:03:32.515204 [info ] [MainThread]: [31m1 check failed:[0m
+[0m08:03:32.518447 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </usr/app/dbt/dbt_project.yml> not found
+
+[0m08:03:32.525819 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.73051697, "process_user_time": 1.858702, "process_kernel_time": 0.171879, "process_mem_max_rss": "95880", "process_in_blocks": "104", "process_out_blocks": "48", "command_success": false}
+[0m08:03:32.529635 [debug] [MainThread]: Command `dbt debug` failed at 08:03:32.528884 after 0.74 seconds
+[0m08:03:32.531672 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m08:03:32.533567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740f728a52e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740f70628d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740f70628ca0>]}
+[0m08:03:32.535668 [debug] [MainThread]: Flushing usage events
+[0m08:05:37.708200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e22b2ed2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e22b502910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e22b5028b0>]}
+
+
+============================== 08:05:37.713767 | ad9f47ae-7b15-4f7d-8bca-6401a17fc6e3 ==============================
+[0m08:05:37.713767 [info ] [MainThread]: Running with dbt=1.8.5
+[0m08:05:37.715040 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt/profiles', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m08:05:37.730198 [info ] [MainThread]: dbt version: 1.8.5
+[0m08:05:37.730996 [info ] [MainThread]: python version: 3.9.19
+[0m08:05:37.731691 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m08:05:37.732515 [info ] [MainThread]: os info: Linux-6.8.0-40-generic-x86_64-with-glibc2.36
+[0m08:05:37.813800 [info ] [MainThread]: Using profiles dir at /usr/app/dbt/profiles
+[0m08:05:37.814527 [info ] [MainThread]: Using profiles.yml file at /usr/app/dbt/profiles/profiles.yml
+[0m08:05:37.815384 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt/dbt_project.yml
+[0m08:05:37.816511 [info ] [MainThread]: adapter type: postgres
+[0m08:05:37.817292 [info ] [MainThread]: adapter version: 1.8.2
+[0m08:05:37.818571 [info ] [MainThread]: Configuration:
+[0m08:05:37.819272 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:05:37.820089 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m08:05:37.820985 [info ] [MainThread]: Required dependencies:
+[0m08:05:37.821889 [debug] [MainThread]: Executing "git --help"
+[0m08:05:37.829951 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:05:37.832079 [debug] [MainThread]: STDERR: "b''"
+[0m08:05:37.832981 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:05:37.833690 [info ] [MainThread]: Connection:
+[0m08:05:37.834458 [info ] [MainThread]:   host: db
+[0m08:05:37.835121 [info ] [MainThread]:   port: 5432
+[0m08:05:37.835822 [info ] [MainThread]:   user: postgres
+[0m08:05:37.837165 [info ] [MainThread]:   database: postgres
+[0m08:05:37.839060 [info ] [MainThread]:   schema: public
+[0m08:05:37.840788 [info ] [MainThread]:   connect_timeout: 10
+[0m08:05:37.841823 [info ] [MainThread]:   role: None
+[0m08:05:37.842723 [info ] [MainThread]:   search_path: None
+[0m08:05:37.843946 [info ] [MainThread]:   keepalives_idle: 0
+[0m08:05:37.844974 [info ] [MainThread]:   sslmode: None
+[0m08:05:37.845638 [info ] [MainThread]:   sslcert: None
+[0m08:05:37.846485 [info ] [MainThread]:   sslkey: None
+[0m08:05:37.847353 [info ] [MainThread]:   sslrootcert: None
+[0m08:05:37.848049 [info ] [MainThread]:   application_name: dbt
+[0m08:05:37.849002 [info ] [MainThread]:   retries: 1
+[0m08:05:37.850501 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m08:05:37.858274 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m08:05:37.926517 [debug] [MainThread]: Using postgres connection "debug"
+[0m08:05:37.927081 [debug] [MainThread]: On debug: select 1 as id
+[0m08:05:37.927563 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:05:38.003700 [debug] [MainThread]: SQL status: SELECT 1 in 0.076 seconds
+[0m08:05:38.006744 [debug] [MainThread]: On debug: Close
+[0m08:05:38.008204 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m08:05:38.009730 [info ] [MainThread]: [31m1 check failed:[0m
+[0m08:05:38.011904 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  dbt_project.yml does not parse to a dictionary
+
+
+[0m08:05:38.016535 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.38928044, "process_user_time": 1.841955, "process_kernel_time": 0.157996, "process_mem_max_rss": "95872", "process_out_blocks": "32", "command_success": false, "process_in_blocks": "0"}
+[0m08:05:38.020470 [debug] [MainThread]: Command `dbt debug` failed at 08:05:38.019706 after 0.39 seconds
+[0m08:05:38.022807 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m08:05:38.025477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e22b2ed2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e2290bb670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e2290bb3d0>]}
+[0m08:05:38.028050 [debug] [MainThread]: Flushing usage events
+[0m08:07:38.412582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e055c3c2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e055e51a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e055e51a00>]}
+
+
+============================== 08:07:38.417880 | 41910bfd-792d-42e2-96e6-a99edb7cfe7e ==============================
+[0m08:07:38.417880 [info ] [MainThread]: Running with dbt=1.8.5
+[0m08:07:38.418959 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt/profiles', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/usr/app/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:07:38.434815 [info ] [MainThread]: dbt version: 1.8.5
+[0m08:07:38.435704 [info ] [MainThread]: python version: 3.9.19
+[0m08:07:38.436461 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m08:07:38.437241 [info ] [MainThread]: os info: Linux-6.8.0-40-generic-x86_64-with-glibc2.36
+[0m08:07:38.520927 [info ] [MainThread]: Using profiles dir at /usr/app/dbt/profiles
+[0m08:07:38.521636 [info ] [MainThread]: Using profiles.yml file at /usr/app/dbt/profiles/profiles.yml
+[0m08:07:38.522443 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt/dbt_project.yml
+[0m08:07:38.523558 [info ] [MainThread]: adapter type: postgres
+[0m08:07:38.524295 [info ] [MainThread]: adapter version: 1.8.2
+[0m08:07:38.660516 [info ] [MainThread]: Configuration:
+[0m08:07:38.661228 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:07:38.661845 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m08:07:38.662608 [info ] [MainThread]: Required dependencies:
+[0m08:07:38.663380 [debug] [MainThread]: Executing "git --help"
+[0m08:07:38.671107 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:07:38.672209 [debug] [MainThread]: STDERR: "b''"
+[0m08:07:38.672809 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:07:38.673524 [info ] [MainThread]: Connection:
+[0m08:07:38.674369 [info ] [MainThread]:   host: db
+[0m08:07:38.675116 [info ] [MainThread]:   port: 5432
+[0m08:07:38.675918 [info ] [MainThread]:   user: postgres
+[0m08:07:38.676481 [info ] [MainThread]:   database: postgres
+[0m08:07:38.677314 [info ] [MainThread]:   schema: public
+[0m08:07:38.677996 [info ] [MainThread]:   connect_timeout: 10
+[0m08:07:38.678595 [info ] [MainThread]:   role: None
+[0m08:07:38.679304 [info ] [MainThread]:   search_path: None
+[0m08:07:38.679996 [info ] [MainThread]:   keepalives_idle: 0
+[0m08:07:38.680595 [info ] [MainThread]:   sslmode: None
+[0m08:07:38.681196 [info ] [MainThread]:   sslcert: None
+[0m08:07:38.681776 [info ] [MainThread]:   sslkey: None
+[0m08:07:38.682361 [info ] [MainThread]:   sslrootcert: None
+[0m08:07:38.682952 [info ] [MainThread]:   application_name: dbt
+[0m08:07:38.683550 [info ] [MainThread]:   retries: 1
+[0m08:07:38.684903 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m08:07:38.692535 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m08:07:38.768814 [debug] [MainThread]: Using postgres connection "debug"
+[0m08:07:38.769642 [debug] [MainThread]: On debug: select 1 as id
+[0m08:07:38.770313 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:07:38.790119 [debug] [MainThread]: SQL status: SELECT 1 in 0.020 seconds
+[0m08:07:38.792246 [debug] [MainThread]: On debug: Close
+[0m08:07:38.796231 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m08:07:38.797124 [info ] [MainThread]: [32mAll checks passed![0m
+[0m08:07:38.799079 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.45940572, "process_user_time": 1.889627, "process_kernel_time": 0.169145, "process_mem_max_rss": "97172", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m08:07:38.800620 [debug] [MainThread]: Command `dbt debug` succeeded at 08:07:38.800322 after 0.46 seconds
+[0m08:07:38.801479 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m08:07:38.802344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e055c3c2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e0539848e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70e0539df7c0>]}
+[0m08:07:38.803288 [debug] [MainThread]: Flushing usage events
+[0m09:15:03.129608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x752fec3162e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x752fec528a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x752fec5289a0>]}
+
+
+============================== 09:15:03.155349 | 3fb47f5d-5d13-4341-958e-c297e66e29c1 ==============================
+[0m09:15:03.155349 [info ] [MainThread]: Running with dbt=1.8.5
+[0m09:15:03.156597 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app/dbt/profiles', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m09:15:03.279281 [info ] [MainThread]: dbt version: 1.8.5
+[0m09:15:03.280194 [info ] [MainThread]: python version: 3.9.19
+[0m09:15:03.281460 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m09:15:03.282643 [info ] [MainThread]: os info: Linux-6.8.0-41-generic-x86_64-with-glibc2.36
+[0m09:15:03.849689 [info ] [MainThread]: Using profiles dir at /usr/app/dbt/profiles
+[0m09:15:03.850375 [info ] [MainThread]: Using profiles.yml file at /usr/app/dbt/profiles/profiles.yml
+[0m09:15:03.851204 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt/dbt_project.yml
+[0m09:15:03.852431 [info ] [MainThread]: adapter type: postgres
+[0m09:15:03.852978 [info ] [MainThread]: adapter version: 1.8.2
+[0m09:15:03.853770 [info ] [MainThread]: Configuration:
+[0m09:15:03.854303 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:15:03.854968 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:15:03.855726 [info ] [MainThread]: Required dependencies:
+[0m09:15:03.856486 [debug] [MainThread]: Executing "git --help"
+[0m09:15:04.002521 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:15:04.008363 [debug] [MainThread]: STDERR: "b''"
+[0m09:15:04.010843 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:15:04.013898 [info ] [MainThread]: Connection:
+[0m09:15:04.017413 [info ] [MainThread]:   host: db
+[0m09:15:04.020939 [info ] [MainThread]:   port: 5432
+[0m09:15:04.024569 [info ] [MainThread]:   user: postgres
+[0m09:15:04.028333 [info ] [MainThread]:   database: postgres
+[0m09:15:04.031534 [info ] [MainThread]:   schema: public
+[0m09:15:04.034292 [info ] [MainThread]:   connect_timeout: 10
+[0m09:15:04.036856 [info ] [MainThread]:   role: None
+[0m09:15:04.038642 [info ] [MainThread]:   search_path: None
+[0m09:15:04.040308 [info ] [MainThread]:   keepalives_idle: 0
+[0m09:15:04.041948 [info ] [MainThread]:   sslmode: None
+[0m09:15:04.043320 [info ] [MainThread]:   sslcert: None
+[0m09:15:04.044586 [info ] [MainThread]:   sslkey: None
+[0m09:15:04.045894 [info ] [MainThread]:   sslrootcert: None
+[0m09:15:04.047274 [info ] [MainThread]:   application_name: dbt
+[0m09:15:04.048416 [info ] [MainThread]:   retries: 1
+[0m09:15:04.050523 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m09:15:04.079407 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m09:15:04.234183 [debug] [MainThread]: Using postgres connection "debug"
+[0m09:15:04.234733 [debug] [MainThread]: On debug: select 1 as id
+[0m09:15:04.235190 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:15:04.730018 [debug] [MainThread]: SQL status: SELECT 1 in 0.494 seconds
+[0m09:15:04.736921 [debug] [MainThread]: On debug: Close
+[0m09:15:04.740375 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:15:04.744418 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:15:04.749677 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </usr/app/dbt/dbt_project.yml> not found
+
+[0m09:15:04.770890 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.7583789, "process_user_time": 3.261096, "process_kernel_time": 0.588725, "process_mem_max_rss": "95384", "process_in_blocks": "56824", "process_out_blocks": "16", "command_success": false}
+[0m09:15:04.773223 [debug] [MainThread]: Command `dbt debug` failed at 09:15:04.772701 after 1.76 seconds
+[0m09:15:04.774592 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:15:04.775511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x752fec3162e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x752fea0e06d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x752fea0e0550>]}
+[0m09:15:04.776305 [debug] [MainThread]: Flushing usage events
+[0m09:15:09.194438 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m12:21:28.086687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74226bc9bfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74226bec8880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74226bec8820>]}
+
+
+============================== 12:21:28.151501 | af5956ce-fecc-48d4-8b84-f76e4f827ef4 ==============================
+[0m12:21:28.151501 [info ] [MainThread]: Running with dbt=1.8.5
+[0m12:21:28.155923 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/usr/app/dbt/profiles', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:21:28.267739 [info ] [MainThread]: dbt version: 1.8.5
+[0m12:21:28.268514 [info ] [MainThread]: python version: 3.9.19
+[0m12:21:28.269339 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m12:21:28.270038 [info ] [MainThread]: os info: Linux-6.8.0-45-generic-x86_64-with-glibc2.36
+[0m12:21:28.842950 [info ] [MainThread]: Using profiles dir at /usr/app/dbt/profiles
+[0m12:21:28.843702 [info ] [MainThread]: Using profiles.yml file at /usr/app/dbt/profiles/profiles.yml
+[0m12:21:28.844532 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt/dbt_project.yml
+[0m12:21:28.858942 [info ] [MainThread]: adapter type: postgres
+[0m12:21:28.860042 [info ] [MainThread]: adapter version: 1.8.2
+[0m12:21:28.861213 [info ] [MainThread]: Configuration:
+[0m12:21:28.861861 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:21:28.862669 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:21:28.863510 [info ] [MainThread]: Required dependencies:
+[0m12:21:28.864375 [debug] [MainThread]: Executing "git --help"
+[0m12:21:29.079076 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:21:29.084209 [debug] [MainThread]: STDERR: "b''"
+[0m12:21:29.086563 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:21:29.089177 [info ] [MainThread]: Connection:
+[0m12:21:29.092226 [info ] [MainThread]:   host: db
+[0m12:21:29.096090 [info ] [MainThread]:   port: 5432
+[0m12:21:29.099376 [info ] [MainThread]:   user: postgres
+[0m12:21:29.102712 [info ] [MainThread]:   database: data_ware_house
+[0m12:21:29.105104 [info ] [MainThread]:   schema: public
+[0m12:21:29.107413 [info ] [MainThread]:   connect_timeout: 10
+[0m12:21:29.109200 [info ] [MainThread]:   role: None
+[0m12:21:29.110588 [info ] [MainThread]:   search_path: None
+[0m12:21:29.112104 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:21:29.113610 [info ] [MainThread]:   sslmode: None
+[0m12:21:29.114870 [info ] [MainThread]:   sslcert: None
+[0m12:21:29.116082 [info ] [MainThread]:   sslkey: None
+[0m12:21:29.117616 [info ] [MainThread]:   sslrootcert: None
+[0m12:21:29.118968 [info ] [MainThread]:   application_name: dbt
+[0m12:21:29.120409 [info ] [MainThread]:   retries: 1
+[0m12:21:29.123411 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m12:21:29.157716 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:21:29.315047 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:21:29.317215 [debug] [MainThread]: On debug: select 1 as id
+[0m12:21:29.318824 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:21:29.615931 [debug] [MainThread]: SQL status: SELECT 1 in 0.297 seconds
+[0m12:21:29.618206 [debug] [MainThread]: On debug: Close
+[0m12:21:29.618990 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:21:29.619926 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:21:29.621190 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </usr/app/dbt/dbt_project.yml> not found
+
+[0m12:21:29.644729 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.6881734, "process_user_time": 3.592672, "process_kernel_time": 0.682547, "process_mem_max_rss": "95184", "process_in_blocks": "90936", "process_out_blocks": "24", "command_success": false}
+[0m12:21:29.645675 [debug] [MainThread]: Command `dbt debug` failed at 12:21:29.645511 after 1.69 seconds
+[0m12:21:29.646247 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:21:29.646863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74226bc9bfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74226a2b5df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x742269ada310>]}
+[0m12:21:29.647530 [debug] [MainThread]: Flushing usage events
+[0m13:21:28.106068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x753ef4e572e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x753ef506dac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x753ef506da60>]}
+
+
+============================== 13:21:28.111352 | e73cd473-5c6c-4061-a501-338e354a4915 ==============================
+[0m13:21:28.111352 [info ] [MainThread]: Running with dbt=1.8.5
+[0m13:21:28.112601 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/usr/app/dbt/profiles', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:21:28.113797 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /usr/app/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:21:28.115431 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.083539575, "process_user_time": 1.567589, "process_kernel_time": 0.141962, "process_mem_max_rss": "82968", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m13:21:28.116321 [debug] [MainThread]: Command `dbt run` failed at 13:21:28.116147 after 0.08 seconds
+[0m13:21:28.117031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x753ef4e572e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x753ef506db80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x753ef506da60>]}
+[0m13:21:28.117965 [debug] [MainThread]: Flushing usage events
+[0m15:30:59.816805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755c61041340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755c61df7310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755c61df72b0>]}
+
+
+============================== 15:30:59.924038 | 590c9232-db71-4407-acdb-ba00920fb5da ==============================
+[0m15:30:59.924038 [info ] [MainThread]: Running with dbt=1.9.0-b2
+[0m15:30:59.926249 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/usr/app/dbt/profiles', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:30:59.928429 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /usr/app/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:30:59.948240 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.32864106, "process_user_time": 3.822826, "process_kernel_time": 0.738534, "process_mem_max_rss": "84656", "process_in_blocks": "69800", "process_out_blocks": "1040", "command_success": false}
+[0m15:30:59.950165 [debug] [MainThread]: Command `dbt run` failed at 15:30:59.949745 after 0.33 seconds
+[0m15:30:59.951422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755c61041340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755c60700280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x755c602383a0>]}
+[0m15:30:59.952633 [debug] [MainThread]: Flushing usage events
+[0m15:31:02.810652 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,2 +1,5 @@
-warehous/
-logs/
+/warehous
+/logs
+/redash
+/data
+/myenv
