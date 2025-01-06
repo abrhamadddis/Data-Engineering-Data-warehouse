@@ -5,7 +5,6 @@
 
 ## Table of Contents
 - [Project Structure](#project-structure)
-    * [images] (#images)
     * [data](#data)
     * [models](#models)
     * [notebooks](#notebooks)
